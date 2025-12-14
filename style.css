@@ -1,0 +1,61 @@
+/* 全局重置 */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* 顶部导航栏 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid;
+}
+
+/* 主体内容 */
+main {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+/* 按钮 */
+button, .home-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Light mode */
+body.light {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+body.light header {
+  border-color: #e0e0e0;
+}
+
+body.light button,
+body.light .home-btn {
+  color: #111111;
+}
+
+/* Dark mode */
+body.dark {
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+body.dark header {
+  border-color: #333333;
+}
+
+body.dark button,
+body.dark .home-btn {
+  color: #eaeaea;
+}
